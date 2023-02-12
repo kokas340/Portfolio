@@ -71,7 +71,7 @@ export default function Home() {
                   </li>
                   <li className="text-white">
                     <Link href="/blogs">
-                      Blogs
+                      Blog
                     </Link>
                   </li>
                   <li className="text-white">
