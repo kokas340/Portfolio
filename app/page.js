@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <>
+    < >
       <header>
 
         <nav className="bg-[#06283D] w-full  shadow static" >
@@ -91,31 +91,32 @@ export default function Home() {
         </nav>
 
       </header>
-      <main>
+      <main className='cursor-pointer'>
         <Image src="/pc.svg" height={100} width={100}class="absolute top-100 left-10  animate-bounce w-100 h-100" />
         <div class="container mx-auto">
           <div class="grid grid-cols-1 mt-16 md:grid-cols-5 lg:grid-cols-5 ">
-            <div class="md:col-span-2 lg:col-span-2">
-              <Image
-                class="mx-auto mt-5 rounded-md shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1  duration-200"
-                src="/jack.jpeg"
-                alt="Picture of the author"
-                width={300}
-                height={500}
-              />
-            </div>
+            
             <div class="md:col-span-3 lg:col-span-3">
 
               <div className="relative px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl py-15 sm:py-10 lg:py-20">
 
                   <div className="text-center">
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                      Data to enrich your online business
-                    </h1>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                      fugiat veniam occaecat fugiat aliqua.
+                    <p className=" text-left animate-bounce	text-4xl font-bold tracking-tight text-blue-600 sm:text-6xl">
+                    Hi,
+                   
+                    </p>
+                    <p className=" text-left	text-4xl font-bold tracking-tight text-blue-600 sm:text-6xl">
+                  
+                     I'm Jack,
+                    
+                    </p>
+                    <p className=" text-left	text-4xl font-bold tracking-tight text-blue-600 sm:text-6xl">
+                
+                     web developer
+                    </p>
+                    <p className="mt-6 text-lg leading-8 text-gray-600 text-left">
+                     Software Developer
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                       <a
@@ -124,9 +125,7 @@ export default function Home() {
                       >
                         Get started
                       </a>
-                      <a href="#" className="text-base font-semibold leading-7 text-gray-900">
-                        Learn more <span aria-hidden="true">→</span>
-                      </a>
+                    
                     </div>
                   </div>
                 </div>
@@ -157,6 +156,15 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
+            </div>
+            <div class="md:col-span-2 lg:col-span-2">
+              <Image
+                class="mx-auto mt-5 rounded-md shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1  duration-200"
+                src="/jack.jpeg"
+                alt="Picture of the author"
+                width={300}
+                height={500}
+              />
             </div>
 
 
