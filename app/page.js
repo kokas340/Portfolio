@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import { styles } from './header.css'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -11,171 +11,180 @@ export default function Home() {
   const [navbar, setNavbar] = useState(false);
   return (
     < >
-      <header>
-
-        <nav className="bg-[#06283D] w-full  shadow static" >
-          <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-            <div>
-              <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                <a href="#">
-                  <h2 className="text-2xl text-white font-bold">JACK SPINOLA</h2>
-                </a>
-                <div className="md:hidden">
-                  <button
-                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                    onClick={() => setNavbar(!navbar)}
-                  >
-                    {navbar ? (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6 text-white"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    ) : (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                      </svg>
-                    )}
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
-                  }`}
-              >
-                <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                  <li className="text-white">
-                    <Link href="/">
-                      Home
-                    </Link>
-                  </li>
-                  <li className="text-white">
-                    <Link href="/blogs">
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="text-white">
-                    <Link href="/about">
-                      About US
-                    </Link>
-                  </li>
-                  <li className="text-white">
-                    <Link href="/contact">
-                      Contact US
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      <nav class="headerColor shadow-2xl shadow-cyan-500/50 px-2 sm:px-4 py-2.5 rounded  ">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <a href="https://flowbite.com/" class="flex items-center">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
+      {/*START black stars */}
+      <div>
+        <div class="starsec"></div>
+        <div class="starthird"></div>
+        <div class="starfourth"></div>
+        <div class="starfifth"></div>
+      </div>
+      {/*END black stars */}
 
-      </header>
-      <main className='cursor-pointer'>
-        <Image src="/pc.svg" height={100} width={100}class="absolute top-100 left-10  animate-bounce w-100 h-100" />
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 mt-16 md:grid-cols-5 lg:grid-cols-5 ">
-            
-            <div class="md:col-span-3 lg:col-span-3">
 
-              <div className="relative px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl py-15 sm:py-10 lg:py-20">
 
-                  <div className="text-center">
-                    <p className=" text-left animate-bounce	text-4xl font-bold tracking-tight text-blue-600 sm:text-6xl">
-                    Hi,
-                   
-                    </p>
-                    <p className=" text-left	text-4xl font-bold tracking-tight text-blue-600 sm:text-6xl">
-                  
-                     I'm Jack,
-                    
-                    </p>
-                    <p className=" text-left	text-4xl font-bold tracking-tight text-blue-600 sm:text-6xl">
-                
-                     web developer
-                    </p>
-                    <p className="mt-6 text-lg leading-8 text-gray-600 text-left">
-                     Software Developer
-                    </p>
-                    <div className="mt-10 flex items-center justify-center gap-x-6">
-                      <a
-                        href="#"
-                        className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                      >
-                        Get started
-                      </a>
-                    
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-                  <svg
-                    className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
-                    viewBox="0 0 1155 678"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
-                      fillOpacity=".3"
-                      d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
-                        x1="1155.49"
-                        x2="-78.208"
-                        y1=".177"
-                        y2="474.645"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stopColor="#9089FC" />
-                        <stop offset={1} stopColor="#FF80B5" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
+      {/*START PINK EFFECT */}
+      <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+        <svg
+          className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+          viewBox="0 0 1155 678"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
+            fillOpacity=".3"
+            d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+          />
+          <defs>
+            <linearGradient
+              id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
+              x1="1155.49"
+              x2="-78.208"
+              y1=".177"
+              y2="474.645"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#9089FC" />
+              <stop offset={1} stopColor="#FF80B5" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      {/*END PINK EFFECT */}
+
+
+      <main >
+        {/* */}
+        <div className="   "  >
+
+        </div>
+
+        <div class="  imageDiv">
+          <div class="grid grid-cols-1 gap-6  lg:grid-cols-2" >
+            <div class="flex justify-center lg:pt-20">
+              <div className="">
+                <p className="font-bold text-7xl text-white uppercase">Hi,</p>
+                <p className="font-bold text-7xl text-white uppercase ">I'm jack</p>
+                <div class="typewriter pt-3">
+                  <p className="font-bold text-4xl uppercase text-sky-400 ">Software Developer 	&#128513; </p>
                 </div>
               </div>
             </div>
-            <div class="md:col-span-2 lg:col-span-2">
-              <Image
-                class="mx-auto mt-5 rounded-md shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1  duration-200"
-                src="/jack.jpeg"
-                alt="Picture of the author"
-                width={300}
-                height={500}
-              />
-            </div>
+            <div class="flex justify-center ">
+              {/*START lamp */}
+              <div class="lamp__wrap">
+                <div class="lamp">
+                  <div class="cable"></div>
+                  <div class="cover"></div>
+                  <div class="in-cover">
+                    <div class="bulb"></div>
+                  </div>
+                  <div class="light"></div>
+                </div>
+                <div className=' flex flex-row h-10 gap-6  justify-center mt-16'>
+                  <Image
+                    src="/ld.png"
+                    alt="linkedin"
+                    width={40}
+                    height={40}
+                  />
+                  <Image
+                    src="/github.png"
+                    alt="github"
+                    width={40}
+                    height={40}
+                  />
+                  <Image
+                    src="/mail.png"
+                    alt="email"
+                    width={40}
+                    height={40}
+                  />
+                  <Image
+                    src="/whats.png"
+                    alt="whatsApp"
+                    width={40}
+                    height={40}
+                  />
 
+                </div>
+              </div>
+              {/*END lamp */}
+
+            </div>
 
           </div>
         </div>
+        <hr></hr>
+        <div className=' pt-16 '>
+          <div class="wrapper">
+            <div class="bg"> About Me </div>
+            <div class="fg"> About Me </div>
+          </div>
+        </div>
+       
+          <div class="grid grid-cols-1 gap-6  lg:grid-cols-5  pt-16" >
+            <div class="center col-span-3 ">
+              <p className='font-mono text-2xl text-white '>
+              My name is Jack, and I am a 20-year-old programmer currently living in Horsens, Denmark. I started programming in 2017, and I am currently working on a self-project using React. I have experience with other programming languages as well. I have a Technical Degree in programming and I am currently in my 3rd semester of Software Engineering, which I expect to complete in 2025. My objective is to obtain a challenging role as a Software Engineer where I can apply my programming skills and gain experience in the field.
+              </p>
+            </div>
+            <div class="lg:pl-12 justify-center col-span-2">
+              
+            <Image
+            className='rounded-lg hover:-translate-y-3  duration-200 myDIV'
+                    src="/jack.jpeg"
+                    alt="email"
+                    width={350}
+                    height={40}
+                  />
+                   <div class="hide lg:pl-14">
+                    <p >Graduation from Technical Degree 2020.</p>
+              
+            </div>
+            </div>
+
+          </div>
         
 
 
-
-
       </main>
+
+
+
+
+
+
     </>
 
   )
