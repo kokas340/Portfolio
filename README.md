@@ -1,6 +1,6 @@
 
 
-## Jack spinola Portfolio
+## Jack Spinola Portfolio
 
 
 ```bash
