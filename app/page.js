@@ -303,9 +303,7 @@ export default function Home() {
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                   </p>
-                  <div class=" flex justify-center items-center">
-                    <p>PHP</p>
-                  </div>
+                 
 
                 </div>
               </div>
@@ -322,6 +320,7 @@ export default function Home() {
         </div>
 
         <div className='flex flex-row justify-center'>
+          <div className='lg:flex lg:justify-end md:flex md:justify-end '>
           <img
             class="rounded-full mx-2"
             src="/php.png"
@@ -347,6 +346,8 @@ export default function Home() {
             width={60}
             height={60}
             alt="js" />
+          </div>
+          <div className='lg:flex lg:justify-start md:flex md:justify-start'>
           <img
             class="rounded-full mx-2"
             src="/csharp.png"
@@ -371,8 +372,11 @@ export default function Home() {
             width={60}
             height={60}
             alt="python" />
+          </div>
+          
         </div>
-        <div className='flex flex-row justify-center'>
+        <div className='flex flex-row justify-center pt-4'>
+        <div className='lg:flex lg:justify-end md:flex md:justify-end'>
           <img
             class="rounded-full mx-2"
             src="/codeig.png"
@@ -385,19 +389,16 @@ export default function Home() {
             width={60}
             height={60}
             alt="react" />
-          <img
-            class="rounded-full mx-2"
-            src="/android.png"
-            width={60}
-            height={60}
-            alt="android" />
+        
           <img
             class="rounded-full mx-2"
             src="/bootstrap.png"
             width={60}
             height={60}
             alt="bootstrap" />
-          <img
+          </div>
+          <div className='lg:flex lg:justify-start md:flex md:justify-start'>
+         <img
             class="rounded-full mx-2"
             src="/tailwind.jpg"
             width={60}
@@ -415,6 +416,8 @@ export default function Home() {
             width={60}
             height={60}
             alt="jquery" />
+         </div>
+          
         </div>
 
 
