@@ -137,7 +137,7 @@ export default function Home() {
               My name is Jack, and I am a 20-year-old programmer currently living in Horsens, Denmark. I started programming in 2017, and I am currently working on a self-project using React. I have experience with other programming languages as well. I have a Technical Degree in programming and I am currently in my 3rd semester of Software Engineering, which I expect to complete in 2025. My objective is to obtain a challenging role as a Software Engineer where I can apply my programming skills and gain experience in the field.
             </p>
           </div>
-          <div class="lg:pr-12  col-span-2 grid place-items-center">
+          <div class="lg:pr-12 pl-3  col-span-2 grid place-items-center">
 
             <Image
               className='rounded-lg hover:-translate-y-3 overflowy duration-200 myDIV '
