@@ -527,9 +527,9 @@ button {
 }
 
 .imageDiv{
-    height: 40vh; /* For 100% screen height */
+    height: 100; /* For 100% screen height */
     width:  100vw; /* For 100% screen width */
-
+    padding-bottom: 30px;
     background-image: url("../public/space.gif");
     
 }
@@ -548,8 +548,12 @@ hr{
 
 :root {
     --gold: #2d1070;
-    --light-shadow: #000000;
+    --gold1: #27c227;
+    --gold2: #b30d0d;
+    --light-shadow: #0f0f0f;
     --dark-shadow: #4e216d;
+    --dark-shadow1: #1e582d;
+    --dark-shadow2: #910f0f;
   }
  
   .wrapper {
@@ -566,7 +570,7 @@ hr{
    
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    font-size: clamp( 3em, 18vw, 2rem);
+    font-size: clamp( 2em, 18vw, 2rem);
     grid-area: overlap;
     letter-spacing: 1px;
     -webkit-text-stroke: 4px transparent;
@@ -577,7 +581,7 @@ hr{
       var(--dark-shadow) 5%,
       var(--gold) 12%);
     color: transparent;
-    filter: drop-shadow(15px 15px 40px  rgb(53, 8, 33));
+    filter: drop-shadow(15px 15px 40px  rgb(156, 30, 100));
     transform: scaleY(1.05);
     transform-origin: top;
   }
@@ -586,6 +590,42 @@ hr{
       var(--gold) 0% , 
       var(--light-shadow) 23%, 
       var(--gold) 31%);
+    color: #dfdfdf;
+    transform: scale(1);
+  }
+  div.bg1 {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold1) 0% , 
+      var(--dark-shadow1) 5%,
+      var(--gold1) 12%);
+    color: transparent;
+    filter: drop-shadow(15px 15px 40px  rgb(22, 160, 9));
+    transform: scaleY(1.05);
+    transform-origin: top;
+  }
+  div.fg1{
+    background-image: repeating-linear-gradient( 5deg,  
+      var(--gold1) 0% , 
+      var(--light-shadow1) 23%, 
+      var(--gold1) 31%);
+    color: #dfdfdf;
+    transform: scale(1);
+  }
+  div.bg2 {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold2) 0% , 
+      var(--dark-shadow2) 5%,
+      var(--gold2) 12%);
+    color: transparent;
+    filter: drop-shadow(15px 15px 40px  rgb(99, 9, 9));
+    transform: scaleY(1.05);
+    transform-origin: top;
+  }
+  div.fg2{
+    background-image: repeating-linear-gradient( 5deg,  
+      var(--gold2) 0% , 
+      var(--light-shadow2) 23%, 
+      var(--gold2) 31%);
     color: #dfdfdf;
     transform: scale(1);
   }
@@ -605,3 +645,8 @@ hr{
     display: block;
     color: #dfdfdf;
   }
+
+  .overflowy{
+    overflow-y: hidden;
+  }
+

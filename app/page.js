@@ -11,37 +11,7 @@ export default function Home() {
   const [navbar, setNavbar] = useState(false);
   return (
     < >
-      <nav class="headerColor shadow-2xl shadow-cyan-500/50 px-2 sm:px-4 py-2.5 rounded  ">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
-          <a href="https://flowbite.com/" class="flex items-center">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-          </a>
-          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+
       {/*START black stars */}
       <div>
         <div class="starsec"></div>
@@ -85,21 +55,11 @@ export default function Home() {
 
       <main >
         {/* */}
-        <div className="   "  >
 
-        </div>
 
-        <div class="  imageDiv">
+        <div class="  imageDiv lg:height">
           <div class="grid grid-cols-1 gap-6  lg:grid-cols-2" >
-            <div class="flex justify-center lg:pt-20">
-              <div className="">
-                <p className="font-bold text-7xl text-white uppercase">Hi,</p>
-                <p className="font-bold text-7xl text-white uppercase ">I'm jack</p>
-                <div class="typewriter pt-3">
-                  <p className="font-bold text-4xl uppercase text-sky-400 ">Software Developer 	&#128513; </p>
-                </div>
-              </div>
-            </div>
+
             <div class="flex justify-center ">
               {/*START lamp */}
               <div class="lamp__wrap">
@@ -142,6 +102,15 @@ export default function Home() {
               {/*END lamp */}
 
             </div>
+            <div class="flex justify-center lg:pt-20 pt-10">
+              <div className="">
+                <p className="font-bold lg:text-7xl text-4xl text-white uppercase">Hi,</p>
+                <p className="font-bold lg:text-7xl text-4xl text-white uppercase ">I'm jack</p>
+                <div class="typewriter pt-3">
+                  <p className="font-bold lg:text-4xl text-2xl uppercase text-sky-400 ">Software Developer 	&#128513; </p>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -152,30 +121,102 @@ export default function Home() {
             <div class="fg"> About Me </div>
           </div>
         </div>
-       
-          <div class="grid grid-cols-1 gap-6  lg:grid-cols-5  pt-16" >
-            <div class="center col-span-3 ">
-              <p className='font-mono text-2xl text-white '>
+
+        <div class="grid grid-cols-1 gap-6  lg:grid-cols-5  pt-16 overflowy" >
+          <div class="center col-span-3 ">
+            <p className='font-mono text-lg lg:text-2xl text-white '>
               My name is Jack, and I am a 20-year-old programmer currently living in Horsens, Denmark. I started programming in 2017, and I am currently working on a self-project using React. I have experience with other programming languages as well. I have a Technical Degree in programming and I am currently in my 3rd semester of Software Engineering, which I expect to complete in 2025. My objective is to obtain a challenging role as a Software Engineer where I can apply my programming skills and gain experience in the field.
-              </p>
-            </div>
-            <div class="lg:pl-12 justify-center col-span-2">
-              
+            </p>
+          </div>
+          <div class="lg:pr-12  col-span-2 grid place-items-center">
+
             <Image
-            className='rounded-lg hover:-translate-y-3  duration-200 myDIV'
-                    src="/jack.jpeg"
-                    alt="email"
-                    width={350}
+              className='rounded-lg hover:-translate-y-3 overflowy duration-200 myDIV '
+              src="/jack.jpeg"
+              alt="email"
+              width={350}
+              height={40}
+            />
+            <div class="hide ">
+              <p >Graduation from Technical Degree 2020.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="grid grid-cols-1 gap-6  lg:grid-cols-6  pt-16 overflowy" >
+          <div class="center col-span-3 justify-center">
+            <div class="wrapper">
+              <div class="bg1 text-center"> Education </div>
+              <div class="fg1 text-center"> Education </div>
+            </div>
+            <div class="grid grid-cols-8" >
+              <div className='col-span-2'>
+              <Image
+                    src="/whats.png"
+                    alt="whatsApp"
+                    width={70}
                     height={40}
                   />
-                   <div class="hide lg:pl-14">
-                    <p >Graduation from Technical Degree 2020.</p>
-              
-            </div>
-            </div>
+              </div>
+              <div className='col-span-6'>
+                  <p>Informatics & Programming</p>
+                  <div className='flex flex-row'>
+                      <p>Cristovao Colombo</p>
+                      <p>Technical Degree | 2017 - 2020</p>
+                  </div>
+                
+              </div>
 
+              <div className='col-span-2'>
+              <Image
+                    src="/whats.png"
+                    alt="whatsApp"
+                    width={70}
+                    height={40}
+                  />
+              </div>
+              <div className='col-span-6'>
+                  <p>Software Engineering</p>
+                  <div className='flex flex-row'>
+                      <p>VIA University</p>
+                      <p>Bachelor's Degree | 2022 - 2025</p>
+                  </div>
+                
+              </div>
+            </div>
           </div>
-        
+          <div class="center col-span-3 justify-center">
+
+            <div class="wrapper">
+              <div class="bg2 text-center"> Work Experience </div>
+              <div class="fg2 text-center"> Work Experience </div>
+            </div>
+            <div class="grid grid-cols-8" >
+            <div className='col-span-2'>
+              <Image
+                    src="/whats.png"
+                    alt="whatsApp"
+                    width={70}
+                    height={40}
+                  />
+              </div>
+              <div className='col-span-6'>
+                  <p>Full Stack Developer</p>
+                  <div className='flex flex-row'>
+                      <p>GoClick</p>
+                      <p>Technical Degree | January, 2020 - June, 2020</p>
+                  </div>
+                
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
 
 
       </main>
