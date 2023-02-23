@@ -250,10 +250,10 @@ export default function Home() {
                 </a>
                 <div class="p-6">
                   <h5
-                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    class="mb-2 text-xl font-medium leading-tight ">
                     Riga Cup
                   </h5>
-                  <p class=" text-base text-neutral-600 dark:text-neutral-200">
+                  <p class="text-base ">
                    I developed the backend for this system managing all the tournaments and teams.
                   </p>
 
@@ -277,10 +277,10 @@ export default function Home() {
                 </a>
                 <div class="p-6">
                   <h5
-                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    class="mb-2 text-xl font-medium leading-tight ">
                     Chess
                   </h5>
-                  <p class=" text-base text-neutral-600 dark:text-neutral-200">
+                  <p class=" text-base ">
                   I took this on as a challenge, not being allowed to use any chess pre-built libraries.
                   </p>
 
@@ -303,10 +303,10 @@ export default function Home() {
                 </a>
                 <div class="p-6">
                   <h5
-                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    class="mb-2 text-xl font-medium leading-tight ">
                     Messenger App
                   </h5>
-                  <p class=" text-base text-neutral-600 dark:text-neutral-200">
+                  <p class=" text-base">
                   I had too much time on my hands and decided to create a chat app with React Native and Firebase.
                   </p>
                  
