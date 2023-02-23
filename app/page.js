@@ -239,10 +239,10 @@ export default function Home() {
           <div className='col-span-4'>
             <div class="flex justify-center">
               <div
-                class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                class=" block hover:-translate-y-3  duration-200 rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                <a href="https://rigacup.lv/" data-te-ripple-init data-te-ripple-color="light">
                   <img
-                    class="rounded-t-lg"
+                    class="rounded-t-lg "
                     src="/rigacup.png"
                     width={1000}
                     height={300}
@@ -254,8 +254,7 @@ export default function Home() {
                     Riga Cup
                   </h5>
                   <p class=" text-base text-neutral-600 dark:text-neutral-200">
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                   I developed the backend for this system managing all the tournaments and teams.
                   </p>
 
                 </div>
@@ -268,7 +267,7 @@ export default function Home() {
             <div class="flex justify-center">
               <div
                 class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                <a href="" data-te-ripple-init data-te-ripple-color="light">
                   <img
                     class="rounded-t-lg"
                     src="/rigacup.png"
@@ -282,8 +281,7 @@ export default function Home() {
                     Chess
                   </h5>
                   <p class=" text-base text-neutral-600 dark:text-neutral-200">
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                  I took this on as a challenge, not being allowed to use any chess pre-built libraries.
                   </p>
 
                 </div>
@@ -309,8 +307,7 @@ export default function Home() {
                     Messenger App
                   </h5>
                   <p class=" text-base text-neutral-600 dark:text-neutral-200">
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                  I had too much time on my hands and decided to create a chat app with React Native and Firebase.
                   </p>
                  
 
@@ -332,7 +329,7 @@ export default function Home() {
           <div className='lg:flex lg:justify-end md:flex md:justify-end '>
           <img
             class="rounded-full mx-2"
-            src="/php.png"
+            src="/PHP.png"
 
             width={60}
             height={60}
@@ -435,9 +432,10 @@ export default function Home() {
       </main>
       <footer>
         <div className='bg-slate-900	min-w-max'>
-          <p className='text-center py-6 text-white'>
+          <p className='text-center pt-6 pb-2 text-white'>
             JACK SPINOLA, 2023
           </p>
+          <p className='text-center italic py-6 text-white'>“First, solve the problem. Then, write the code.” – John Johnson</p>
         </div>
       </footer>
 
