@@ -270,7 +270,7 @@ export default function Home() {
                 <a href="" data-te-ripple-init data-te-ripple-color="light">
                   <img
                     class="rounded-t-lg"
-                    src="/rigacup.png"
+                    src="/chess.png"
                     width={1000}
                     height={300}
                     alt="" />
@@ -296,7 +296,7 @@ export default function Home() {
                 <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                   <img
                     class="rounded-t-lg"
-                    src="/rigacup.png"
+                    src="/messenger.png"
                     width={1000}
                     height={300}
                     alt="Messenger app" />
