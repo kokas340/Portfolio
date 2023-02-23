@@ -53,11 +53,11 @@ export default function Home() {
       {/*END PINK EFFECT */}
 
 
-      <main >
+      <main className='overflowy overflowx'>
         {/* */}
 
 
-        <div class="  imageDiv lg:height">
+        <div class="  imageDiv ">
           <div class="grid grid-cols-1 gap-6  lg:grid-cols-2" >
 
             <div class="flex justify-center ">
@@ -102,7 +102,7 @@ export default function Home() {
               {/*END lamp */}
 
             </div>
-            <div class="flex justify-center lg:pt-20 pt-10">
+            <div class="flex justify-center lg:pt-20 pt-10 phoneView">
               <div className="">
                 <p className="font-bold lg:text-7xl text-4xl text-white uppercase">Hi,</p>
                 <p className="font-bold lg:text-7xl text-4xl text-white uppercase ">I'm jack</p>
@@ -147,75 +147,177 @@ export default function Home() {
 
 
         <div class="grid grid-cols-1 gap-6  lg:grid-cols-6  pt-16 overflowy" >
-          <div class="center col-span-3 justify-center">
-            <div class="wrapper">
+          <div class="center col-span-3 ">
+            <div class="wrapper lg:pb-5">
               <div class="bg1 text-center"> Education </div>
               <div class="fg1 text-center"> Education </div>
             </div>
-            <div class="grid grid-cols-8" >
-              <div className='col-span-2'>
-              <Image
-                    src="/whats.png"
-                    alt="whatsApp"
-                    width={70}
-                    height={40}
-                  />
+            <div class="grid grid-cols-8 pt-10" >
+              <div className='col-span-1'>
+                <Image
+                  className='rounded-full '
+                  src="/epcc.png"
+                  alt="epcc"
+                  width={70}
+                  height={70}
+                />
               </div>
-              <div className='col-span-6'>
-                  <p>Informatics & Programming</p>
-                  <div className='flex flex-row'>
-                      <p>Cristovao Colombo</p>
-                      <p>Technical Degree | 2017 - 2020</p>
-                  </div>
-                
+              <div className='col-span-7'>
+                <p className='text-teal-400 font-semibold text-xl'>Informatics & Programming</p>
+                <div className='flex flex-row'>
+                  <p className='text-lg text-white'>Cristóvão Colombo &nbsp; </p>
+                  <p className='text-lg text-gray-700'>Technical Degree | 2017 - 2020</p>
+                </div>
+
               </div>
 
-              <div className='col-span-2'>
-              <Image
-                    src="/whats.png"
-                    alt="whatsApp"
-                    width={70}
-                    height={40}
-                  />
+              <div className='col-span-1 lg:pt-8'>
+                <Image
+                  className='rounded-lg '
+                  src="/via.jpg"
+                  alt="via"
+                  width={70}
+                  height={70}
+                />
               </div>
-              <div className='col-span-6'>
-                  <p>Software Engineering</p>
-                  <div className='flex flex-row'>
-                      <p>VIA University</p>
-                      <p>Bachelor's Degree | 2022 - 2025</p>
-                  </div>
-                
+              <div className='col-span-7 lg:pt-6'>
+                <p className='text-teal-400 font-semibold text-xl'>Software Engineering</p>
+                <div className='flex flex-row'>
+                  <p className='text-lg text-white'>VIA University&nbsp; </p>
+                  <p className='text-lg text-gray-700'>Bachelor's Degree | 2022 - 2025</p>
+                </div>
+
               </div>
             </div>
           </div>
-          <div class="center col-span-3 justify-center">
+          <div class="center col-span-3 ">
 
-            <div class="wrapper">
+            <div class="wrapper lg:pb-24">
               <div class="bg2 text-center"> Work Experience </div>
               <div class="fg2 text-center"> Work Experience </div>
             </div>
-            <div class="grid grid-cols-8" >
-            <div className='col-span-2'>
-              <Image
-                    src="/whats.png"
-                    alt="whatsApp"
-                    width={70}
-                    height={40}
-                  />
+            <div class="grid grid-cols-8 pt-10" >
+              <div className='col-span-1'>
+                <Image
+                  className='rounded-full '
+                  src="/goclick.jfif"
+                  alt="goclick"
+                  width={70}
+                  height={70}
+                />
               </div>
-              <div className='col-span-6'>
-                  <p>Full Stack Developer</p>
-                  <div className='flex flex-row'>
-                      <p>GoClick</p>
-                      <p>Technical Degree | January, 2020 - June, 2020</p>
-                  </div>
-                
+              <div className='col-span-7'>
+                <p className='text-red-500 font-semibold text-xl'>Full Stack Developer</p>
+                <div className='flex flex-row'>
+                  <p className='text-lg text-white '>GoClick &nbsp;</p>
+                  <p className='text-lg text-gray-600 '>App Developer | January, 2020 - June, 2020</p>
+                </div>
+
               </div>
+
 
             </div>
           </div>
 
         </div>
+        <div className=' pt-16 '>
+          <div class="wrapper">
+            <div class="bg"> PROJECTS </div>
+            <div class="fg"> PROJECTS </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-14 px-12 lg:grid-cols-12  pt-20 overflowy lg:px-24 " >
+          <div className='col-span-4'>
+          <div class="flex justify-center">
+              <div
+                class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                  <img
+                    class="rounded-t-lg"
+                    src="/rigacup.png"
+                    width={1000}
+                    height={300}
+                    alt="" />
+                </a>
+                <div class="p-6">
+                  <h5
+                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    Riga Cup
+                  </h5>
+                  <p class=" text-base text-neutral-600 dark:text-neutral-200">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div className='col-span-4'>
+          <div class="flex justify-center">
+              <div
+                class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                  <img
+                    class="rounded-t-lg"
+                    src="/rigacup.png"
+                    width={1000}
+                    height={300}
+                    alt="" />
+                </a>
+                <div class="p-6">
+                  <h5
+                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    Chess 
+                  </h5>
+                  <p class=" text-base text-neutral-600 dark:text-neutral-200">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-span-4'>
+          <div class="flex justify-center">
+              <div
+                class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                  <img
+                    class="rounded-t-lg"
+                    src="/rigacup.png"
+                    width={1000}
+                    height={300}
+                    alt="" />
+                </a>
+                <div class="p-6">
+                  <h5
+                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    Messenger App
+                  </h5>
+                  <p class=" text-base text-neutral-600 dark:text-neutral-200">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div className=' pt-16 '>
+          <div class="wrapper">
+            <div class="bg"> SKILLS </div>
+            <div class="fg"> SKILLS </div>
+          </div>
+        </div>
+
 
 
 

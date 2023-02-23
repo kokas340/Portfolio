@@ -461,7 +461,7 @@ button {
 .in-cover .bulb {
     width: 50px;
     height: 50px;
-    background-color: #08fffa;
+    background-color: #00fffb;
     border-radius: 50%;
     position: absolute;
     left: 0px;
@@ -470,6 +470,7 @@ button {
     margin: 0px auto;
     -webkit-box-shadow: 0 0 15px 7px rgba(0, 255, 255, 0.8), 0 0 40px 25px rgba(0, 255, 255, 0.5), -75px 0 30px 15px rgba(0, 255, 255, 0.2);
     box-shadow: 0 0 25px 7px rgb(127 255 255 / 80%), 0 0 64px 47px rgba(0, 255, 255, 0.5), 0px 0 30px 15px rgba(0, 255, 255, 0.2);
+    animation: blinkerr 1s linear infinite;
 }
 
 
@@ -489,7 +490,23 @@ button {
     border-radius: 90px 90px 0px 0px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    animation: blinker 1s linear infinite;
 }
+
+  
+  @keyframes blinker {
+    45% {
+      opacity: 0;
+    }
+  }
+  @keyframes blinkerr {
+   
+    50% {
+        background-color: #055250;
+        -webkit-box-shadow: 0 0 15px 7px rgba(7, 63, 63, 0.8), 0 0 40px 25px rgba(5, 99, 99, 0.5), -75px 0 30px 15px rgba(4, 59, 59, 0.2);
+        box-shadow: 0 0 25px 7px rgba(5, 65, 65, 0.8), 0 0 64px 47px rgba(4, 58, 58, 0.5), 0px 0 30px 15px rgba(3, 83, 83, 0.2);
+    }
+  }
 
 /* 2.3. END Lamp */
 /***********************************
@@ -526,6 +543,7 @@ button {
   40% { border-color: orange; }
 }
 
+
 .imageDiv{
     height: 100; /* For 100% screen height */
     width:  100vw; /* For 100% screen width */
@@ -533,6 +551,16 @@ button {
     background-image: url("../public/space.gif");
     
 }
+@media only screen and (max-device-width : 450px) {
+    .imageDiv {  height: 100vh;
+        width:  100vw; /* For 100% screen width */
+       
+        background-image: url("../public/space.gif");
+     }
+     .phoneView{
+        padding-top: 23vh;
+     }
+    }
 
 .headerColor{
     background-color: #0b1238;
@@ -599,7 +627,7 @@ hr{
       var(--dark-shadow1) 5%,
       var(--gold1) 12%);
     color: transparent;
-    filter: drop-shadow(15px 15px 40px  rgb(22, 160, 9));
+    filter: drop-shadow(15px 15px 40px  rgb(16, 97, 8));
     transform: scaleY(1.05);
     transform-origin: top;
   }
@@ -649,4 +677,8 @@ hr{
   .overflowy{
     overflow-y: hidden;
   }
+  .overflowx{
+    overflow-x: hidden;
+  }
+
 
