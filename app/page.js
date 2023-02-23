@@ -53,7 +53,7 @@ export default function Home() {
       {/*END PINK EFFECT */}
 
 
-      <main className='overflowy overflowx'>
+      <main className='overflowy overflowx pb-12'>
         {/* */}
 
 
@@ -72,30 +72,39 @@ export default function Home() {
                   <div class="light"></div>
                 </div>
                 <div className=' flex flex-row h-10 gap-6  justify-center mt-16'>
+                <a href="https://www.linkedin.com/in/jackspinola/" className='z-50'>
                   <Image
                     src="/ld.png"
                     alt="linkedin"
                     width={40}
                     height={40}
                   />
+                  </a>
+                  <a href="https://github.com/kokas340" className='z-50'>
                   <Image
                     src="/github.png"
                     alt="github"
                     width={40}
                     height={40}
                   />
+                   </a>
+                   <a href="mailto:jackspinola198@hotmail.com" className='z-50'>
                   <Image
                     src="/mail.png"
                     alt="email"
                     width={40}
                     height={40}
                   />
+                   </a>
+                   <a className='z-50' href="https://api.whatsapp.com/send/?phone=4591450703&text&type=phone_number&app_absent=0">
                   <Image
                     src="/whats.png"
                     alt="whatsApp"
                     width={40}
                     height={40}
                   />
+                   </a>
+                  
 
                 </div>
               </div>
@@ -153,7 +162,7 @@ export default function Home() {
               <div class="fg1 text-center"> Education </div>
             </div>
             <div class="grid grid-cols-8 pt-10" >
-              <div className='col-span-1'>
+              <div className='col-span-1 mr-1'>
                 <Image
                   className='rounded-full '
                   src="/epcc.png"
@@ -164,16 +173,16 @@ export default function Home() {
               </div>
               <div className='col-span-7'>
                 <p className='text-teal-400 font-semibold text-xl'>Informatics & Programming</p>
-                <div className='flex flex-row'>
+                <div className='lg:flex lg:flex-row'>
                   <p className='text-lg text-white'>Cristóvão Colombo &nbsp; </p>
                   <p className='text-lg text-gray-700'>Technical Degree | 2017 - 2020</p>
                 </div>
 
               </div>
 
-              <div className='col-span-1 lg:pt-8'>
+              <div className='col-span-1 lg:pt-8 mr-1'>
                 <Image
-                  className='rounded-lg '
+                  className='lg:rounded-lg '
                   src="/via.jpg"
                   alt="via"
                   width={70}
@@ -182,7 +191,7 @@ export default function Home() {
               </div>
               <div className='col-span-7 lg:pt-6'>
                 <p className='text-teal-400 font-semibold text-xl'>Software Engineering</p>
-                <div className='flex flex-row'>
+                <div className='lg:flex lg:flex-row'>
                   <p className='text-lg text-white'>VIA University&nbsp; </p>
                   <p className='text-lg text-gray-700'>Bachelor's Degree | 2022 - 2025</p>
                 </div>
@@ -197,7 +206,7 @@ export default function Home() {
               <div class="fg2 text-center"> Work Experience </div>
             </div>
             <div class="grid grid-cols-8 pt-10" >
-              <div className='col-span-1'>
+              <div className='col-span-1 mr-1'>
                 <Image
                   className='rounded-full '
                   src="/goclick.jfif"
@@ -208,7 +217,7 @@ export default function Home() {
               </div>
               <div className='col-span-7'>
                 <p className='text-red-500 font-semibold text-xl'>Full Stack Developer</p>
-                <div className='flex flex-row'>
+                <div className='lg:flex lg:flex-row'>
                   <p className='text-lg text-white '>GoClick &nbsp;</p>
                   <p className='text-lg text-gray-600 '>App Developer | January, 2020 - June, 2020</p>
                 </div>
@@ -424,6 +433,13 @@ export default function Home() {
 
 
       </main>
+      <footer>
+        <div className='bg-slate-900	min-w-max'>
+          <p className='text-center py-6 text-white'>
+            JACK SPINOLA, 2023
+          </p>
+        </div>
+      </footer>
 
 
 
