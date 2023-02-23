@@ -239,7 +239,7 @@ export default function Home() {
           <div className='col-span-4'>
             <div class="flex justify-center">
               <div
-                class=" block hover:-translate-y-3  duration-200 rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                class=" block hover:-translate-y-3  duration-200 rounded-lg bg-white ">
                 <a href="https://rigacup.lv/" data-te-ripple-init data-te-ripple-color="light">
                   <img
                     class="rounded-t-lg "
@@ -266,7 +266,7 @@ export default function Home() {
           <div className='col-span-4'>
             <div class="flex justify-center">
               <div
-                class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                class="block  rounded-lg bg-white shadow-lg ">
                 <a href="" data-te-ripple-init data-te-ripple-color="light">
                   <img
                     class="rounded-t-lg"
@@ -292,7 +292,7 @@ export default function Home() {
           <div className='col-span-4'>
             <div class="flex justify-center">
               <div
-                class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                class="block  rounded-lg bg-white ">
                 <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                   <img
                     class="rounded-t-lg"
@@ -435,7 +435,7 @@ export default function Home() {
           <p className='text-center pt-6 pb-2 text-white'>
             JACK SPINOLA, 2023
           </p>
-          <p className='text-center italic py-6 text-white'>“First, solve the problem. Then, write the code.” – John Johnson</p>
+          <p className='text-center italic py-6 text-white px-2'>“First, solve the problem. Then, write the code.” – John Johnson</p>
         </div>
       </footer>
 
