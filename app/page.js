@@ -228,7 +228,7 @@ export default function Home() {
         </div>
         <div class="grid grid-cols-1 gap-14 px-12 lg:grid-cols-12  pt-20 overflowy lg:px-24 " >
           <div className='col-span-4'>
-          <div class="flex justify-center">
+            <div class="flex justify-center">
               <div
                 class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                 <a href="#!" data-te-ripple-init data-te-ripple-color="light">
@@ -248,7 +248,7 @@ export default function Home() {
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                   </p>
-                  
+
                 </div>
               </div>
             </div>
@@ -256,7 +256,7 @@ export default function Home() {
           </div>
 
           <div className='col-span-4'>
-          <div class="flex justify-center">
+            <div class="flex justify-center">
               <div
                 class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                 <a href="#!" data-te-ripple-init data-te-ripple-color="light">
@@ -270,20 +270,20 @@ export default function Home() {
                 <div class="p-6">
                   <h5
                     class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                    Chess 
+                    Chess
                   </h5>
                   <p class=" text-base text-neutral-600 dark:text-neutral-200">
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                   </p>
-                  
+
                 </div>
               </div>
             </div>
           </div>
 
           <div className='col-span-4'>
-          <div class="flex justify-center">
+            <div class="flex justify-center">
               <div
                 class="block  rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                 <a href="#!" data-te-ripple-init data-te-ripple-color="light">
@@ -292,7 +292,7 @@ export default function Home() {
                     src="/rigacup.png"
                     width={1000}
                     height={300}
-                    alt="" />
+                    alt="Messenger app" />
                 </a>
                 <div class="p-6">
                   <h5
@@ -303,7 +303,10 @@ export default function Home() {
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                   </p>
-                  
+                  <div class=" flex justify-center items-center">
+                    <p>PHP</p>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -311,11 +314,107 @@ export default function Home() {
 
         </div>
 
-        <div className=' pt-16 '>
+        <div className=' pt-16 pb-12 '>
           <div class="wrapper">
             <div class="bg"> SKILLS </div>
             <div class="fg"> SKILLS </div>
           </div>
+        </div>
+
+        <div className='flex flex-row justify-center'>
+          <img
+            class="rounded-full mx-2"
+            src="/php.png"
+
+            width={60}
+            height={60}
+            alt="php" />
+          <img
+            class="rounded-full mx-2"
+            src="/html.png"
+            width={60}
+            height={60}
+            alt="html" />
+          <img
+            class="rounded-full mx-2"
+            src="/java.png"
+            width={60}
+            height={60}
+            alt="java" />
+          <img
+            class="rounded-full mx-2"
+            src="/js.png"
+            width={60}
+            height={60}
+            alt="js" />
+          <img
+            class="rounded-full mx-2"
+            src="/csharp.png"
+            width={60}
+            height={60}
+            alt="c#" />
+          <img
+            class="rounded-full mx-2"
+            src="/sql.png"
+            width={60}
+            height={60}
+            alt="sql" />
+          <img
+            class="rounded-full mx-2"
+            src="/css.png"
+            width={60}
+            height={60}
+            alt="css" />
+          <img
+            class="rounded-full mx-2"
+            src="/python.png"
+            width={60}
+            height={60}
+            alt="python" />
+        </div>
+        <div className='flex flex-row justify-center'>
+          <img
+            class="rounded-full mx-2"
+            src="/codeig.png"
+            width={60}
+            height={60}
+            alt="codeIgniter" />
+          <img
+            class="rounded-full mx-2"
+            src="/react.png"
+            width={60}
+            height={60}
+            alt="react" />
+          <img
+            class="rounded-full mx-2"
+            src="/android.png"
+            width={60}
+            height={60}
+            alt="android" />
+          <img
+            class="rounded-full mx-2"
+            src="/bootstrap.png"
+            width={60}
+            height={60}
+            alt="bootstrap" />
+          <img
+            class="rounded-full mx-2"
+            src="/tailwind.jpg"
+            width={60}
+            height={60}
+            alt="tailwind" />
+          <img
+            class="rounded-full mx-2"
+            src="/next.png"
+            width={60}
+            height={60}
+            alt="next" />
+          <img
+            class="rounded-full mx-2"
+            src="/jquery.png"
+            width={60}
+            height={60}
+            alt="jquery" />
         </div>
 
 
