@@ -175,7 +175,7 @@ export default function Home() {
                 <p className='text-teal-400 font-semibold text-xl'>Informatics & Programming</p>
                 <div className='lg:flex lg:flex-row'>
                   <p className='text-lg text-white'>Cristóvão Colombo &nbsp; </p>
-                  <p className='text-lg text-gray-700'>Technical Degree | 2017 - 2020</p>
+                  <p className='text-lg text-gray-700'>Technical Degree | 2018 - 2021</p>
                 </div>
 
               </div>
@@ -219,7 +219,7 @@ export default function Home() {
                 <p className='text-red-500 font-semibold text-xl'>Full Stack Developer</p>
                 <div className='lg:flex lg:flex-row'>
                   <p className='text-lg text-white '>GoClick &nbsp;</p>
-                  <p className='text-lg text-gray-600 '>App Developer | January, 2020 - June, 2020</p>
+                  <p className='text-lg text-gray-600 '>App Developer | January, 2021 - June, 2021</p>
                 </div>
 
               </div>
