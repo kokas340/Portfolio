@@ -636,7 +636,7 @@ hr{
       var(--gold1) 0% , 
       var(--light-shadow1) 23%, 
       var(--gold1) 31%);
-    color: #dfdfdf;
+    
     transform: scale(1);
   }
   div.bg2 {
@@ -654,7 +654,7 @@ hr{
       var(--gold2) 0% , 
       var(--light-shadow2) 23%, 
       var(--gold2) 31%);
-    color: #dfdfdf;
+   
     transform: scale(1);
   }
 

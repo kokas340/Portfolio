@@ -158,8 +158,8 @@ export default function Home() {
         <div class="grid grid-cols-1 gap-6  lg:grid-cols-6  pt-16 overflowy" >
           <div class="center col-span-3 ">
             <div class="wrapper lg:pb-5">
-              <div class="bg1 text-center"> Education </div>
-              <div class="fg1 text-center"> Education </div>
+      
+              <div class=" text-teal-400 fg1 text-center"> Education </div>
             </div>
             <div class="grid grid-cols-8 pt-10" >
               <div className='col-span-1 mr-1'>
@@ -202,8 +202,8 @@ export default function Home() {
           <div class="center col-span-3 ">
 
             <div class="wrapper lg:pb-24">
-              <div class="bg2 text-center"> Work Experience </div>
-              <div class="fg2 text-center"> Work Experience </div>
+             
+              <div class="text-red-500 fg2 text-center"> Work Experience </div>
             </div>
             <div class="grid grid-cols-8 pt-10" >
               <div className='col-span-1 mr-1'>
