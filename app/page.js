@@ -266,8 +266,8 @@ export default function Home() {
           <div className='col-span-4'>
             <div class="flex justify-center">
               <div
-                class="block  rounded-lg bg-white shadow-lg ">
-                <a href="" data-te-ripple-init data-te-ripple-color="light">
+                class="block hover:-translate-y-3  duration-200 rounded-lg bg-white ">
+                <a href="https://github.com/kokas340/chess" data-te-ripple-init data-te-ripple-color="light">
                   <img
                     class="rounded-t-lg"
                     src="/chess.png"
@@ -292,8 +292,8 @@ export default function Home() {
           <div className='col-span-4'>
             <div class="flex justify-center">
               <div
-                class="block  rounded-lg bg-white ">
-                <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                class="block hover:-translate-y-3  duration-200 rounded-lg bg-white ">
+                <a href="https://github.com/kokas340/FirebaseChat" data-te-ripple-init data-te-ripple-color="light">
                   <img
                     class="rounded-t-lg"
                     src="/messenger.png"
