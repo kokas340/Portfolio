@@ -162,7 +162,7 @@ export default function Home() {
               <div class=" text-teal-400 fg1 text-center"> Education </div>
             </div>
             <div class="grid grid-cols-8 pt-10" >
-              <div className='col-span-1 mr-1'>
+              <div className='col-span-1 mr-3'>
                 <Image
                   className='rounded-full '
                   src="/epcc.png"
@@ -175,12 +175,12 @@ export default function Home() {
                 <p className='text-teal-400 font-semibold text-xl'>Informatics & Programming</p>
                 <div className='lg:flex lg:flex-row'>
                   <p className='text-lg text-white'>Cristóvão Colombo &nbsp; </p>
-                  <p className='text-lg text-gray-700'>Technical Degree | 2018 - 2021</p>
+                  <p className='text-lg text-lime-500		'>Technical Degree | 2018 - 2021</p>
                 </div>
 
               </div>
 
-              <div className='col-span-1 lg:pt-8 mr-1'>
+              <div className='col-span-1 lg:pt-8 mr-3'>
                 <Image
                   className='lg:rounded-lg '
                   src="/via.jpg"
@@ -193,7 +193,7 @@ export default function Home() {
                 <p className='text-teal-400 font-semibold text-xl'>Software Engineering</p>
                 <div className='lg:flex lg:flex-row'>
                   <p className='text-lg text-white'>VIA University&nbsp; </p>
-                  <p className='text-lg text-gray-700'>Bachelor's Degree | 2022 - 2025</p>
+                  <p className='text-lg text-lime-500		'>Bachelor's Degree | 2022 - 2025</p>
                 </div>
 
               </div>
@@ -206,7 +206,7 @@ export default function Home() {
               <div class="text-red-500 fg2 text-center"> Work Experience </div>
             </div>
             <div class="grid grid-cols-8 pt-10" >
-              <div className='col-span-1 mr-1'>
+              <div className='col-span-1 mr-3'>
                 <Image
                   className='rounded-full '
                   src="/goclick.jfif"
@@ -219,7 +219,7 @@ export default function Home() {
                 <p className='text-red-500 font-semibold text-xl'>Full Stack Developer</p>
                 <div className='lg:flex lg:flex-row'>
                   <p className='text-lg text-white '>GoClick &nbsp;</p>
-                  <p className='text-lg text-gray-600 '>App Developer | January, 2021 - June, 2021</p>
+                  <p className='text-lg text-orange-500	 '>App Developer | January, 2021 - June, 2021</p>
                 </div>
 
               </div>
