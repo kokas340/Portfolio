@@ -4,7 +4,7 @@
 
 
 
-Made with next.js and Tailwind
+Made with next.js and Tailwind css.
 
 
 
