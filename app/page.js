@@ -72,7 +72,7 @@ export default function Home() {
                   <div class="light"></div>
                 </div>
                 <div className=' flex flex-row h-10 gap-6  justify-center mt-16'>
-                <a href="https://www.linkedin.com/in/jackspinola/" className='z-50'>
+                <a href="https://www.linkedin.com/in/jack-spinola-0a835927b/" className='z-50'>
                   <Image
                     src="/ld.png"
                     alt="linkedin"
