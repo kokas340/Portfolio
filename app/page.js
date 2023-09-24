@@ -134,7 +134,7 @@ export default function Home() {
         <div class="grid grid-cols-1 gap-6  lg:grid-cols-5  pt-16 overflowy" >
           <div class="center col-span-3 ">
             <p className='font-mono text-lg lg:text-2xl text-white '>
-           My name is Jack, and I am a 20-year-old programmer currently residing in Horsens, Denmark. I began my programming journey in 2017 and have since transitioned my focus to C programming. I hold a Technical Degree in programming and am currently enrolled in my 4th semester of Software Engineering, with an anticipated graduation date in 2025. Currently, I am actively seeking an internship opportunity as a Software Engineer, where I can leverage my programming expertise and continue to grow within the field. My goal is to secure a rewarding position as a Software Engineer and gain valuable experience during this internship period.
+           My name is Jack, and I am a 21-year-old programmer currently residing in Horsens, Denmark. I began my programming journey in 2017 and have since transitioned my focus to C programming. I hold a Technical Degree in programming and am currently enrolled in my 4th semester of Software Engineering, with an anticipated graduation date in 2025. Currently, I am actively seeking an internship opportunity as a Software Engineer, where I can leverage my programming expertise and continue to grow within the field. My goal is to secure a rewarding position as a Software Engineer and gain valuable experience during this internship period.
             </p>
           </div>
           <div class="lg:pr-12 pl-3  col-span-2 grid place-items-center">
