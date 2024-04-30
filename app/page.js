@@ -8,6 +8,6 @@ export default function Home() {
     window.location.href = "https://kokas340.github.io/portfolio2.0/";
   }, []);
 
-  // This component  won't render because the page will be redirected before it gets a chance to render
+  // This component won't render because the page will be redirected before it gets a chance to render
   return null;
 }
